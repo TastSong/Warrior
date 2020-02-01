@@ -173,6 +173,12 @@ public class ComponentPlayer : MonoBehaviour , IActionHandle
 		float h = Input.GetAxisRaw ("Horizontal");
 		float v = Input.GetAxisRaw ("Vertical");
 
+        //按键的取值，以虚拟杆中的值为优先
+        if (Joystick.h != 0 || Joystick.v != 0)
+        {
+            h = Joystick.h; v = Joystick.v;
+        }
+
 		MoveDirection = new Vector3 (h, 0, v);
 		Force = Mathf.Clamp(MoveDirection.magnitude, 0, 1);
 		MoveDirection.Normalize ();
@@ -196,8 +202,28 @@ public class ComponentPlayer : MonoBehaviour , IActionHandle
 			CreateOrderUse ();
 		}
 	}
+    //用于按钮触发普攻
+    public void OnPlaySprite()
+    {
+        CreateOrderAttack(E_AttackType.X);
+    }
+    //用于按钮触发翻滚
+    public void OnPlayRoll()
+    {
+        CreateOrderDodge();
+    }
+    //用于按钮触发格挡
+    public void OnPlayHide()
+    {
+        CreateOrderUse();
 
+    }
+    //用于按钮触发横披
+    public void OnPlayHack()
+    {
+        CreateOrderAttack(E_AttackType.O);
 
+    }
 	void LateUpdate()
 	{
 		if (StepTime < Time.timeSinceLevelLoad)

@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Warrior", "Assembly-CSharp-
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Warrior", "Assembly-CSharp.csproj", "{AE9652C0-235D-5B07-787C-90432F2D850F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Warrior", "Assembly-CSharp-Editor.csproj", "{7E765282-7763-02F3-436F-45A1A3E52DAA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,10 @@ Global
 		{AE9652C0-235D-5B07-787C-90432F2D850F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE9652C0-235D-5B07-787C-90432F2D850F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE9652C0-235D-5B07-787C-90432F2D850F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E765282-7763-02F3-436F-45A1A3E52DAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E765282-7763-02F3-436F-45A1A3E52DAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E765282-7763-02F3-436F-45A1A3E52DAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E765282-7763-02F3-436F-45A1A3E52DAA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
