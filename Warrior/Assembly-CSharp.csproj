@@ -1,0 +1,353 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{AE9652C0-235D-5B07-787C-90432F2D850F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_5_6_7;UNITY_5_6;UNITY_5;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;ENABLE_VIDEO;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>D:/Program Files/Unity/Hub/Editor/Unity5.6.7/Editor/Data/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>D:/Program Files/Unity/Hub/Editor/Unity5.6.7/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Scripts\Agent\AgentActions\AgentAcitonWeaponShow.cs" />
+     <Compile Include="Assets\Scripts\Agent\AgentActions\AgentAction.cs" />
+     <Compile Include="Assets\Scripts\Agent\AgentActions\AgentActionAttack.cs" />
+     <Compile Include="Assets\Scripts\Agent\AgentActions\AgentActionAttackRoll.cs" />
+     <Compile Include="Assets\Scripts\Agent\AgentActions\AgentActionAttackWhirl.cs" />
+     <Compile Include="Assets\Scripts\Agent\AgentActions\AgentActionBlock.cs" />
+     <Compile Include="Assets\Scripts\Agent\AgentActions\AgentActionCombatMove.cs" />
+     <Compile Include="Assets\Scripts\Agent\AgentActions\AgentActionDamageBlocked.cs" />
+     <Compile Include="Assets\Scripts\Agent\AgentActions\AgentActionDeath.cs" />
+     <Compile Include="Assets\Scripts\Agent\AgentActions\AgentActionGoTo.cs" />
+     <Compile Include="Assets\Scripts\Agent\AgentActions\AgentActionIdle.cs" />
+     <Compile Include="Assets\Scripts\Agent\AgentActions\AgentActionIncommingAttack.cs" />
+     <Compile Include="Assets\Scripts\Agent\AgentActions\AgentActionInjury.cs" />
+     <Compile Include="Assets\Scripts\Agent\AgentActions\AgentActionKnockdown.cs" />
+     <Compile Include="Assets\Scripts\Agent\AgentActions\AgentActionMove.cs" />
+     <Compile Include="Assets\Scripts\Agent\AgentActions\AgentActionPlayAnim.cs" />
+     <Compile Include="Assets\Scripts\Agent\AgentActions\AgentActionPlayIdleAnim.cs" />
+     <Compile Include="Assets\Scripts\Agent\AgentActions\AgentActionRoll.cs" />
+     <Compile Include="Assets\Scripts\Agent\AgentActions\AgentActionRotate.cs" />
+     <Compile Include="Assets\Scripts\Agent\AgentActions\AgentActionTeleport.cs" />
+     <Compile Include="Assets\Scripts\Agent\AgentActions\AgentActionUseLever.cs" />
+     <Compile Include="Assets\Scripts\Agent\AgentOrders\AgentOrder.cs" />
+     <Compile Include="Assets\Scripts\Agent\CompinentPlayer\ComponentPlayer.cs" />
+     <Compile Include="Assets\Scripts\Agent\CompinentPlayer\ComponentSounds.cs" />
+     <Compile Include="Assets\Scripts\Agent\CompinentPlayer\SkillData.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponentEnemy\ComponentChoppedBody.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponentEnemy\ComponentEnemyArcher.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponentEnemy\ComponentEnemyBossOrochi.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponentEnemy\ComponentEnemyDoubleSwordsman.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponentEnemy\ComponentEnemyMiniBoss.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponentEnemy\ComponentEnemyPeasant.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponentEnemy\ComponentEnemySwordsman.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponentEnemy\SensorBestCombatPositions.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponentEnemy\SensorEyes.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponentFSM\AnimComponent.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponentFSM\_AnimFSM\AnimFSM.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponentFSM\_AnimFSM\AnimFSMEnemyArcher.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponentFSM\_AnimFSM\AnimFSMEnemyBoss01.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponentFSM\_AnimFSM\AnimFSMEnemyBoss02.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponentFSM\_AnimFSM\AnimFSMEnemyBoss03.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponentFSM\_AnimFSM\AnimFSMEnemyBossOrochi.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponentFSM\_AnimFSM\AnimFSMEnemyDoubleSwordsman.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponentFSM\_AnimFSM\AnimFSMEnemyMiniBoss.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponentFSM\_AnimFSM\AnimFSMEnemyPeasant.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponentFSM\_AnimFSM\AnimFSMEnemySwordsman.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponentFSM\_AnimFSM\AnimFSMPlayer.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponentFSM\_AnimSet\AnimSet.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponentFSM\_AnimSet\AnimSetEnemyArcher.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponentFSM\_AnimSet\AnimSetEnemyBoss01.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponentFSM\_AnimSet\AnimSetEnemyBoss02.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponentFSM\_AnimSet\AnimSetEnemyBoss03.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponentFSM\_AnimSet\AnimSetEnemyBossOrochi.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponentFSM\_AnimSet\AnimSetEnemyDoubleSwordsman.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponentFSM\_AnimSet\AnimSetEnemyMiniBoss.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponentFSM\_AnimSet\AnimSetEnemyPeasant.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponentFSM\_AnimSet\AnimSetEnemySwordsMan.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponentFSM\_AnimSet\AnimSetPlayer.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponentFSM\_AnimState\AnimState.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponentFSM\_AnimState\AnimStateAttackBow.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponentFSM\_AnimState\AnimStateAttackMelee.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponentFSM\_AnimState\AnimStateAttackRoll.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponentFSM\_AnimState\AnimStateAttackWhirl.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponentFSM\_AnimState\AnimStateBlocking.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponentFSM\_AnimState\AnimStateCombatMove.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponentFSM\_AnimState\AnimStateDeath.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponentFSM\_AnimState\AnimStateGoTo.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponentFSM\_AnimState\AnimStateIdle.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponentFSM\_AnimState\AnimStateInjury.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponentFSM\_AnimState\AnimStateInjuryPhased.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponentFSM\_AnimState\AnimStateKnockdown.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponentFSM\_AnimState\AnimStateMove.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponentFSM\_AnimState\AnimStatePlayAnim.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponentFSM\_AnimState\AnimStateRoll.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponentFSM\_AnimState\AnimStateRotate.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponentFSM\_AnimState\AnimStateTeleport.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponentFSM\_AnimState\AnimStateUseLever.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponetAI\AStarMachine\AStarEngine.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponetAI\AStarMachine\AStarGoal.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponetAI\AStarMachine\AStarMap.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponetAI\AStarMachine\AStarNode.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponetAI\AStarMachine\AStarStorage.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponetAI\Agent.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponetAI\BlackBoard.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponetAI\GOAP\AStarGOAPGoal.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponetAI\GOAP\AStarGOAPMap.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponetAI\GOAP\AStarGOAPNode.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponetAI\GOAP\Actions\GOAPAction.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponetAI\GOAP\Actions\GOAPActionAttackBerserk.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponetAI\GOAP\Actions\GOAPActionAttackBossSpecial.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponetAI\GOAP\Actions\GOAPActionAttackBow.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponetAI\GOAP\Actions\GOAPActionAttackCounter.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponetAI\GOAP\Actions\GOAPActionAttackMeleeOnce.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponetAI\GOAP\Actions\GOAPActionAttackMeleeTwoSwords.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponetAI\GOAP\Actions\GOAPActionAttackRoll.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponetAI\GOAP\Actions\GOAPActionAttackWhirl.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponetAI\GOAP\Actions\GOAPActionBlock.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponetAI\GOAP\Actions\GOAPActionCombatMoveBackward.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponetAI\GOAP\Actions\GOAPActionCombatMoveForward.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponetAI\GOAP\Actions\GOAPActionCombatMoveToLeft.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponetAI\GOAP\Actions\GOAPActionCombatMoveToRight.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponetAI\GOAP\Actions\GOAPActionCombatRunBackward.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponetAI\GOAP\Actions\GOAPActionCombatRunForward.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponetAI\GOAP\Actions\GOAPActionDeath.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponetAI\GOAP\Actions\GOAPActionGoTo.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponetAI\GOAP\Actions\GOAPActionGoToMeleeRange.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponetAI\GOAP\Actions\GOAPActionIdleActionTount.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponetAI\GOAP\Actions\GOAPActionInjury.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponetAI\GOAP\Actions\GOAPActionInjuryOrochi.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponetAI\GOAP\Actions\GOAPActionKnockdown.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponetAI\GOAP\Actions\GOAPActionLookAtTarget.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponetAI\GOAP\Actions\GOAPActionMove.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponetAI\GOAP\Actions\GOAPActionOrderAttack.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponetAI\GOAP\Actions\GOAPActionOrderDodge.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponetAI\GOAP\Actions\GOAPActionPlayAnim.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponetAI\GOAP\Actions\GOAPActionRollToTarget.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponetAI\GOAP\Actions\GOAPActionTeleport.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponetAI\GOAP\Actions\GOAPActionUseLever.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponetAI\GOAP\Actions\GOAPActionWeaponHide.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponetAI\GOAP\Actions\GOAPActionWeaponShow.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponetAI\GOAP\GOAPManager.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponetAI\GOAP\GOAPPlan.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponetAI\GOAP\Goals\GOAPGoal.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponetAI\GOAP\Goals\GOAPGoalAlert.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponetAI\GOAP\Goals\GOAPGoalCalm.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponetAI\GOAP\Goals\GOAPGoalCombatMoveBackward.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponetAI\GOAP\Goals\GOAPGoalCombatMoveForward.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponetAI\GOAP\Goals\GOAPGoalCombatMoveToLeft.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponetAI\GOAP\Goals\GOAPGoalCombatMoveToRight.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponetAI\GOAP\Goals\GOAPGoalDoBlock.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponetAI\GOAP\Goals\GOAPGoalDodge.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponetAI\GOAP\Goals\GOAPGoalGoTo.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponetAI\GOAP\Goals\GOAPGoalIdleAction.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponetAI\GOAP\Goals\GOAPGoalKillTarget.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponetAI\GOAP\Goals\GOAPGoalLookAtTarget.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponetAI\GOAP\Goals\GOAPGoalOrderAttack.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponetAI\GOAP\Goals\GOAPGoalOrderDodge.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponetAI\GOAP\Goals\GOAPGoalOrderUseWorldObject.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponetAI\GOAP\Goals\GOAPGoalPlayAnim.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponetAI\GOAP\Goals\GOAPGoalReactToDamage.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponetAI\GOAP\Goals\GOAPGoalTeleport.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponetAI\GOAP\Goals\GOAPGoalUseWorldObject.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponetAI\GOAP\WorldState.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponetAI\WorkingMemory\Fact.cs" />
+     <Compile Include="Assets\Scripts\Agent\ComponetAI\WorkingMemory\Memory.cs" />
+     <Compile Include="Assets\Scripts\Agent\_Factories\AgentActionFactory.cs" />
+     <Compile Include="Assets\Scripts\Agent\_Factories\AgentOrderFactory.cs" />
+     <Compile Include="Assets\Scripts\Agent\_Factories\FactsFactory.cs" />
+     <Compile Include="Assets\Scripts\Agent\_Factories\GOAPActionFactory.cs" />
+     <Compile Include="Assets\Scripts\Agent\_Factories\GOAPGoalFactory.cs" />
+     <Compile Include="Assets\Scripts\Agent\_Factories\WorldStatePropFactory.cs" />
+     <Compile Include="Assets\Scripts\Audio\AudioListenerBehaviour.cs" />
+     <Compile Include="Assets\Scripts\Cache.cs" />
+     <Compile Include="Assets\Scripts\Camera\CameraBehaviour.cs" />
+     <Compile Include="Assets\Scripts\Camera\CameraController.cs" />
+     <Compile Include="Assets\Scripts\Camera\CameraOffset.cs" />
+     <Compile Include="Assets\Scripts\Camera\CameraTargetAttributes.cs" />
+     <Compile Include="Assets\Scripts\Camera\CameraTrigger.cs" />
+     <Compile Include="Assets\Scripts\Debug\LogResources.cs" />
+     <Compile Include="Assets\Scripts\Effects\CombatEffectsManager.cs" />
+     <Compile Include="Assets\Scripts\Effects\ScaleAnimationOnObject.cs" />
+     <Compile Include="Assets\Scripts\Effects\SpriteEffectsManager.cs" />
+     <Compile Include="Assets\Scripts\Game.cs" />
+     <Compile Include="Assets\Scripts\GameLogic\AutoElementManager.cs" />
+     <Compile Include="Assets\Scripts\GameLogic\BaseGameZone.cs" />
+     <Compile Include="Assets\Scripts\GameLogic\GameZone.cs" />
+     <Compile Include="Assets\Scripts\GameLogic\HumanCache.cs" />
+     <Compile Include="Assets\Scripts\GameLogic\IEDable.cs" />
+     <Compile Include="Assets\Scripts\GameLogic\InteractionBase.cs" />
+     <Compile Include="Assets\Scripts\GameLogic\LoadNextLevel.cs" />
+     <Compile Include="Assets\Scripts\GameLogic\MissionBlackBoard.cs" />
+     <Compile Include="Assets\Scripts\GameLogic\MissionZone.cs" />
+     <Compile Include="Assets\Scripts\GameLogic\Tegra2Only.cs" />
+     <Compile Include="Assets\Scripts\GameLogic\Teleport.cs" />
+     <Compile Include="Assets\Scripts\Misc\ClearAndLoadNextLevel.cs" />
+     <Compile Include="Assets\Scripts\Misc\Factory.cs" />
+     <Compile Include="Assets\Scripts\Misc\FlurryBinding.cs" />
+     <Compile Include="Assets\Scripts\Misc\FpsCounter.cs" />
+     <Compile Include="Assets\Scripts\Misc\Mathfx.cs" />
+     <Compile Include="Assets\Scripts\Misc\Queue.cs" />
+     <Compile Include="Assets\Scripts\Misc\RotateObject.cs" />
+     <Compile Include="Assets\Scripts\Misc\Types.cs" />
+     <Compile Include="Assets\Scripts\Misc\iTween.cs" />
+     <Compile Include="Assets\Scripts\Objects\BreakableExperience.cs" />
+     <Compile Include="Assets\Scripts\Objects\BreakableObject.cs" />
+     <Compile Include="Assets\Scripts\Objects\DestroyOn3G.cs" />
+     <Compile Include="Assets\Scripts\Objects\HitObject.cs" />
+     <Compile Include="Assets\Scripts\Objects\InteractionLever.cs" />
+     <Compile Include="Assets\Scripts\Objects\InteractionObject.cs" />
+     <Compile Include="Assets\Scripts\Objects\InteractionTrigger.cs" />
+     <Compile Include="Assets\Scripts\Objects\InteractionTriggerAnim.cs" />
+     <Compile Include="Assets\Scripts\Objects\ObjectDamage.cs" />
+     <Compile Include="Assets\Scripts\Objects\PadLock.cs" />
+     <Compile Include="Assets\Scripts\ProjectileManager\ProjectileArrow.cs" />
+     <Compile Include="Assets\Scripts\ProjectileManager\ProjectileManager.cs" />
+     <Compile Include="Assets\Scripts\Sounds\SoundDataManager.cs" />
+     <Compile Include="Assets\Scripts\Spawn\SpawnPoint.cs" />
+     <Compile Include="Assets\Scripts\Spawn\SpawnPointPlayer.cs" />
+     <Compile Include="Assets\Scripts\Spawn\SpawnZone.cs" />
+     <Compile Include="Assets\Scripts\Spawn\SpwanPointEnemy.cs" />
+     <Compile Include="Assets\Scripts\Spritemanager\LinkedSpriteManager.cs" />
+     <Compile Include="Assets\Scripts\Spritemanager\Sprite.cs" />
+     <Compile Include="Assets\Scripts\Spritemanager\SpriteManager.cs" />
+     <Compile Include="Assets\Scripts\Test.cs" />
+     <Compile Include="Assets\Scripts\Triggers\TriggerCameraShowSomething.cs" />
+     <Compile Include="Assets\Scripts\Triggers\TriggerMusic.cs" />
+     <Compile Include="Assets\Scripts\Triggers\TriggerShowAssets.cs" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\SeparableWeightedBlur.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\AddStuff.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\NoiseEffectShaderRGB.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ExtractSkyboxShader.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ShowAlphaChannel.shader" />
+     <None Include="Assets\Assets\Shaders\TransparentSimple.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\GlowConeTap.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\EdgeApply.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\SunShafts.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ColorCorrectionCurves.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\HollywoodFlareBlur.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\VignetteShader.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\PreDepthOfFieldZRead.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\MotionBlur.shader" />
+     <None Include="Assets\Assets\Shaders\GCDifuse.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\CopyDepthToRGBA.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\GlowCompose.shader" />
+     <None Include="Assets\Assets\Shaders\VertexColored.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\Contrast Stretch\MinMaxReduction.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\DepthRGBA8RadialBlur.shader" />
+     <None Include="Assets\Assets\Shaders\TransparentSimpleZBuffer.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ContrastComposite.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\FisheyeShader.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\Contrast Stretch\Apply.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\PreDepthOfField.shader" />
+     <None Include="Assets\Assets\Shaders\Particle Alpha Blend-Z.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\SkyboxToRGBADepth.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\AddAlphaHack.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\RecordCenterDepth.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\SSAOShader.shader" />
+     <None Include="Assets\Assets\Shaders\Particles Additive Culled.shader" />
+     <None Include="Assets\Assets\iPhone Standard Assets\iPhone Shaders\Particle Shaders\iPhone Multiply Culled.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ConvertDepth.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ColorCorrectionCurvesSimple.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\NoiseEffectShaderYUV.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\GlowEffectDownsample.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\CreaseApply.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\Contrast Stretch\Luminance.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ColorCorrectionSelective.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\SeparableBlurPlus.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\EdgeBlurApply.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\DofForegroundBlur.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\SeparableBlur.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ColorCorrectionEffect.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\GrayscaleEffect.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\SepiaToneEffect.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\TwirlEffect.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\VortexEffect.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\Contrast Stretch\Adaptation.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\EdgeDetectNormalsHQ.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\SeparableRGBADepthBlur.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\HollywoodFlareStretch.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BrightPassFilter.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\LensFlareCreate.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\EdgeDetectNormals.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ClearExceptSkyboxShader.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\SimpleClear.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\DepthOfField.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\EdgeDetectX.shader" />
+     <None Include="Assets\Assets\Shaders\TextureSimple.shader" />
+ <Reference Include="Assembly-UnityScript-firstpass">
+ <HintPath>C:/Users/TastS/Desktop/Warrior/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>D:/Program Files/Unity/Hub/Editor/Unity5.6.7/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>D:/Program Files/Unity/Hub/Editor/Unity5.6.7/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TestRunner">
+ <HintPath>D:/Program Files/Unity/Hub/Editor/Unity5.6.7/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>D:/Program Files/Unity/Hub/Editor/Unity5.6.7/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>D:/Program Files/Unity/Hub/Editor/Unity5.6.7/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>D:/Program Files/Unity/Hub/Editor/Unity5.6.7/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VR">
+ <HintPath>D:/Program Files/Unity/Hub/Editor/Unity5.6.7/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{C2FEF267-5973-D6C2-7AAE-C2ED2074266A}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
