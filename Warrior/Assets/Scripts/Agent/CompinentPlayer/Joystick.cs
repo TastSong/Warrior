@@ -1,4 +1,18 @@
-﻿using System.Collections;
+﻿//
+// /**************************************************************************
+//
+// Joystick.cs
+//
+// Author: TastSong  <TastSong@Gmail.com>
+//
+// Date: 2020.2.1
+//
+// Description:游戏虚拟手柄
+//
+// Copyright (c) 2020 TastSong
+//
+// **************************************************************************/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
