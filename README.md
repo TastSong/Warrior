@@ -1,9 +1,17 @@
 # Warrior二次开发日志
 
+## 开发环境
+
 * 开发平台 `unity5.6.7`
 * 编译工具 `VS2013`
 * `Android Studio`版本`3.5.3`
 * 游戏测试手机`MEIZI 16th`
+
+## 演示图片
+
+![](https://github.com/TastSong/Warrior/blob/master/DomeImage/1.png)
+
+![](https://github.com/TastSong/Warrior/blob/master/DomeImage/0.png)
 
 ## 2020.1.31 上传原始项目
 
